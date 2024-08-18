@@ -1,0 +1,20 @@
+{
+    "authors": [
+        {
+            "name": "Gabriel Dogadov",
+            "affiliation": "TU Berlin, Computer Graphics Group",
+            "email": null
+        },
+        {
+            "name": "Ugo Finnendahl",
+            "affiliation": "TU Berlin, Computer Graphics Group",
+            "email": null
+        },
+        {
+            "name": "Marc Alexa",
+            "affiliation": "TU Berlin, Computer Graphics Group",
+            "email": null
+        }
+    ],
+    "abstract": "在欧几里得空间中的仿射子空间通常被称为平直面或flats。在计算机视觉以及更广泛的工程和应用科学领域中，一个常见的任务是将一个平直面拟合到一组点上，这个问题通常通过主成分分析（PCA）来解决。我们推广了这一技术，使之能够根据将平直面表示为平方距离场的方式来拟合一个平直面到一组其他可能维度不同的平直面上。与之前的方法如在仿射Grassmann流形上的Riemann中心相比，我们的方法概念上更简单且计算效率更高，同时具备一些期望的特性，比如尊重对称性并保持对刚体变换的协变性，这在实践中能产生更加直观且有用的结果。我们在多个合成实验及一线状物体的多视图重建任务中展示了这些特点。"
+}
