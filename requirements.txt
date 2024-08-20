@@ -1,2 +1,8 @@
 requests
 beautifulsoup4
+dashscope
+openai
+openpyxl
+pandas
+SQLAlchemy
+PyMySQL
