@@ -226,5 +226,271 @@
         "links": [
             "https://www.ecva.net/papers.php"
         ]
+    },
+    {
+        "path": "NeurIPS2024",
+        "logfile": "NeurIPS2024.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2024"
+        ]
+    },
+    {
+        "path": "NeurIPS2023",
+        "logfile": "NeurIPS2023.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2023"
+        ]
+    },
+    {
+        "path": "NeurIPS2022",
+        "logfile": "NeurIPS2022.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2022"
+        ]
+    },
+    {
+        "path": "NeurIPS2021",
+        "logfile": "NeurIPS2021.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2021"
+        ]
+    },
+    {
+        "path": "NeurIPS2020",
+        "logfile": "NeurIPS2020.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2020"
+        ]
+    },
+    {
+        "path": "NeurIPS2019",
+        "logfile": "NeurIPS2019.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2019"
+        ]
+    },
+    {
+        "path": "NeurIPS2018",
+        "logfile": "NeurIPS2018.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2018"
+        ]
+    },
+    {
+        "path": "NeurIPS2017",
+        "logfile": "NeurIPS2017.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2017"
+        ]
+    },
+    {
+        "path": "NeurIPS2016",
+        "logfile": "NeurIPS2016.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2016"
+        ]
+    },
+    {
+        "path": "NeurIPS2015",
+        "logfile": "NeurIPS2015.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2015"
+        ]
+    },
+    {
+        "path": "NeurIPS2014",
+        "logfile": "NeurIPS2014.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2014"
+        ]
+    },
+    {
+        "path": "NeurIPS2013",
+        "logfile": "NeurIPS2013.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2013"
+        ]
+    },
+    {
+        "path": "NeurIPS2012",
+        "logfile": "NeurIPS2012.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2012"
+        ]
+    },
+    {
+        "path": "NeurIPS2011",
+        "logfile": "NeurIPS2011.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2011"
+        ]
+    },
+    {
+        "path": "NeurIPS2010",
+        "logfile": "NeurIPS2010.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2010"
+        ]
+    },
+    {
+        "path": "NeurIPS2009",
+        "logfile": "NeurIPS2009.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2009"
+        ]
+    },
+    {
+        "path": "NeurIPS2008",
+        "logfile": "NeurIPS2008.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2008"
+        ]
+    },
+    {
+        "path": "NeurIPS2007",
+        "logfile": "NeurIPS2007.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2007"
+        ]
+    },
+    {
+        "path": "NeurIPS2006",
+        "logfile": "NeurIPS2006.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2006"
+        ]
+    },
+    {
+        "path": "NeurIPS2005",
+        "logfile": "NeurIPS2005.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2005"
+        ]
+    },
+    {
+        "path": "NeurIPS2004",
+        "logfile": "NeurIPS2004.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2004"
+        ]
+    },
+    {
+        "path": "NeurIPS2003",
+        "logfile": "NeurIPS2003.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2003"
+        ]
+    },
+    {
+        "path": "NeurIPS2002",
+        "logfile": "NeurIPS2002.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2002"
+        ]
+    },
+    {
+        "path": "NeurIPS2001",
+        "logfile": "NeurIPS2001.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2001"
+        ]
+    },
+    {
+        "path": "NeurIPS2000",
+        "logfile": "NeurIPS2000.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/2000"
+        ]
+    },
+    {
+        "path": "NeurIPS1999",
+        "logfile": "NeurIPS1999.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/1999"
+        ]
+    },
+    {
+        "path": "NeurIPS1998",
+        "logfile": "NeurIPS1998.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/1998"
+        ]
+    },
+    {
+        "path": "NeurIPS1997",
+        "logfile": "NeurIPS1997.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/1997"
+        ]
+    },
+    {
+        "path": "NeurIPS1996",
+        "logfile": "NeurIPS1996.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/1996"
+        ]
+    },
+    {
+        "path": "NeurIPS1995",
+        "logfile": "NeurIPS1995.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/1995"
+        ]
+    },
+    {
+        "path": "NeurIPS1994",
+        "logfile": "NeurIPS1994.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/1994"
+        ]
+    },
+    {
+        "path": "NeurIPS1993",
+        "logfile": "NeurIPS1993.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/1993"
+        ]
+    },
+    {
+        "path": "NeurIPS1992",
+        "logfile": "NeurIPS1992.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/1992"
+        ]
+    },
+    {
+        "path": "NeurIPS1991",
+        "logfile": "NeurIPS1991.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/1991"
+        ]
+    },
+    {
+        "path": "NeurIPS1990",
+        "logfile": "NeurIPS1990.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/1990"
+        ]
+    },
+    {
+        "path": "NeurIPS1989",
+        "logfile": "NeurIPS1989.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/1989"
+        ]
+    },
+    {
+        "path": "NeurIPS1988",
+        "logfile": "NeurIPS1988.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/1988"
+        ]
+    },
+    {
+        "path": "NeurIPS1987",
+        "logfile": "NeurIPS1987.jsonl",
+        "links": [
+            "https://papers.nips.cc/paper_files/paper/1987"
+        ]
     }
 ]
