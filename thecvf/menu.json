@@ -1,5 +1,14 @@
 [
     {
+        "path": "CVPR2025",
+        "logfile": "CVPR2025.jsonl",
+        "links": [
+            "https://openaccess.thecvf.com/CVPR2025?day=2025-06-13",
+            "https://openaccess.thecvf.com/CVPR2025?day=2024-06-14",
+            "https://openaccess.thecvf.com/CVPR2025?day=2024-06-15"
+        ]
+    },
+    {
         "path": "CVPR2024",
         "logfile": "CVPR2024.jsonl",
         "links": [
@@ -98,6 +107,13 @@
         "logfile": "CVPR2013.jsonl",
         "links": [
             "https://openaccess.thecvf.com/CVPR2013"
+        ]
+    },
+    {
+        "path": "WACV2025",
+        "logfile": "WACV2025.jsonl",
+        "links": [
+            "https://openaccess.thecvf.com/WACV2025"
         ]
     },
     {
