@@ -492,5 +492,173 @@
         "links": [
             "https://papers.nips.cc/paper_files/paper/1987"
         ]
+    },
+    {
+        "path": "ICML2025",
+        "logfile": "ICML2025.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2025-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML2024",
+        "logfile": "ICML2024.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2024-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML2023",
+        "logfile": "ICML2023.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2023-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML2022",
+        "logfile": "ICML2022.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2022-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML2021",
+        "logfile": "ICML2021.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2021-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML2020",
+        "logfile": "ICML2020.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2020-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML2019",
+        "logfile": "ICML2019.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2019-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML2018",
+        "logfile": "ICML2018.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2018-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML2017",
+        "logfile": "ICML2017.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2017-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML2016",
+        "logfile": "ICML2016.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2016-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML2015",
+        "logfile": "ICML2015.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2015-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML2014",
+        "logfile": "ICML2014.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2014-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML2013",
+        "logfile": "ICML2013.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2013-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML2012",
+        "logfile": "ICML2012.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2012-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML2011",
+        "logfile": "ICML2011.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2011-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML2010",
+        "logfile": "ICML2010.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2010-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML2009",
+        "logfile": "ICML2009.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2009-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML2008",
+        "logfile": "ICML2008.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2008-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML2007",
+        "logfile": "ICML2007.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2007-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML2006",
+        "logfile": "ICML2006.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2006-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML2005",
+        "logfile": "ICML2005.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2005-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML2004",
+        "logfile": "ICML2004.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2004-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML2002",
+        "logfile": "ICML2002.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-2002-orals-posters.json"
+        ]
+    },
+    {
+        "path": "ICML1996",
+        "logfile": "ICML1996.jsonl",
+        "links": [
+            "https://icml.cc/static/virtual/data/icml-1996-orals-posters.json"
+        ]
     }
 ]
