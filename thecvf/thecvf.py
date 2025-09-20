@@ -168,6 +168,53 @@ def request_nips_paper_list(url="https://papers.nips.cc/paper_files/paper/2024",
     return papers
 
 
+def request_icml_paper_list(url="https://icml.cc/static/virtual/data/icml-2025-orals-posters.json",
+                            year="ICML2025", debug=False):
+    """
+    ICML
+    :param url:   目标链接
+    :param year:  年份标识
+    :param debug: 调试信息打印开关[默认关闭]
+    :return: 论文信息列表
+    """
+    # 参数检查
+    if year is None or not isinstance(year, str) or len(year) <= 0:
+        return list()
+    # 获取标识 ICML2025 -> 2025
+    flag = year.upper().replace("ICML", "")
+    # 请求页面
+    response = requests.get(url)
+    # 解析JSON
+    # {"count": 3459, "next": null, "previous": null, "results": []}
+    json_obj = json.loads(response.content)
+    count = json_obj.get("count", 0)
+    results = json_obj.get("results", list())
+    print("找到论文记录%d条(count:%d)" % (len(results), count))
+    # 用于存放论文信息
+    papers = list()
+    for item in results:
+        authors = item.get("authors", list())
+        author_str = ""
+        if isinstance(authors, list):
+            author_str = ", ".join([author.get("fullname", "").strip() for author in authors])
+        paper_url = item.get("paper_url", "").strip()
+        virtualsite_url = item.get("virtualsite_url", "").strip()
+        pdf_url = item.get("pdf_url", "").strip()
+        paper_json = {
+            "web_url": paper_url if paper_url else virtualsite_url,
+            "title": item.get("name", "").strip(),
+            "author": author_str,
+            "pdf_url": pdf_url,
+            "raw": item,
+        }
+        if debug:
+            print("-" * 100)
+            print(json.dumps(paper_json, sort_keys=True, indent=4, separators=(',', ': ')))
+        papers.append(paper_json)
+    print("共爬取到论文信息%d条" % len(papers))
+    return papers
+
+
 def export_jsonl(papers, filename):
     """
     导出为jsonl格式
@@ -249,6 +296,8 @@ class CLI(cmd.Cmd):
                         paper_list = request_eccv_paper_list(target_url, year=sub_path)
                     elif sub_path.startswith("NeurIPS"):
                         paper_list = request_nips_paper_list(target_url, year=sub_path)
+                    elif sub_path.startswith("ICML"):
+                        paper_list = request_icml_paper_list(target_url, year=sub_path)
                     else:
                         paper_list = request_paper_list(target_url)
                     # 记录论文信息到日志文件
