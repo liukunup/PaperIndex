@@ -141,7 +141,7 @@ def request_nips_paper_list(url="https://papers.nips.cc/paper_files/paper/2024",
     # 使用BeautifulSoup加载页面
     soup = BeautifulSoup(response.content, features="lxml")
     # 按标签查找
-    li_list = soup.select("li.conference, li.datasets_and_benchmarks_track")
+    li_list = soup.select("li.conference, li.datasets_and_benchmarks_track, li.none")
     print("共找到论文链接%d条" % len(li_list))
     # 用于存放论文信息
     base_url = "https://papers.nips.cc"
