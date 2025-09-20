@@ -123,6 +123,51 @@ def request_eccv_paper_list(url="https://www.ecva.net/papers.php", year=None, de
     return papers
 
 
+def request_nips_paper_list(url="https://papers.nips.cc/paper_files/paper/2024", year="NeurIPS2024", debug=False):
+    """
+    NeurIPS
+    :param url:   目标链接
+    :param year:  年份标识
+    :param debug: 调试信息打印开关[默认关闭]
+    :return: 论文信息列表
+    """
+    # 参数检查
+    if year is None or not isinstance(year, str) or len(year) <= 0:
+        return list()
+    # 获取标识 NeurIPS2024 -> 2024
+    flag = year.upper().replace("NEURIPS", "")
+    # 请求页面
+    response = requests.get(url)
+    # 使用BeautifulSoup加载页面
+    soup = BeautifulSoup(response.content, features="lxml")
+    # 按标签查找
+    li_list = soup.select("li.conference, li.datasets_and_benchmarks_track")
+    print("共找到论文链接%d条" % len(li_list))
+    # 用于存放论文信息
+    base_url = "https://papers.nips.cc"
+    papers = list()
+    for li in li_list:
+        li_a_tag = li.find("a")
+        li_i_tag = li.find("i")
+        link1 = li_a_tag["href"]
+        link2 = None
+        if link1 and link1.startswith("/paper_files/paper/"):
+            link2 = link1.replace("hash", "file").replace("Abstract", "Paper").replace(".html", ".pdf")
+        paper_json = {
+            "web_url": f"{base_url}{link1}",
+            "title": li_a_tag.text.strip(),
+            "author": li_i_tag.text.strip(),
+            "pdf_url": f"{base_url}{link2}",
+        }
+        if debug:
+            print("-" * 100)
+            print(json.dumps(paper_json, sort_keys=True, indent=4, separators=(',', ': ')))
+        if paper_json["web_url"].find(flag) != -1:
+            papers.append(paper_json)
+    print("共爬取到论文信息%d条" % len(papers))
+    return papers
+
+
 def export_jsonl(papers, filename):
     """
     导出为jsonl格式
@@ -202,6 +247,8 @@ class CLI(cmd.Cmd):
                     # 爬取论文链接
                     if sub_path.startswith("ECCV"):
                         paper_list = request_eccv_paper_list(target_url, year=sub_path)
+                    elif sub_path.startswith("NeurIPS"):
+                        paper_list = request_nips_paper_list(target_url, year=sub_path)
                     else:
                         paper_list = request_paper_list(target_url)
                     # 记录论文信息到日志文件
