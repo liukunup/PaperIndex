@@ -191,20 +191,22 @@ def request_icml_paper_list(url="https://icml.cc/static/virtual/data/icml-2025-o
     results = json_obj.get("results", list())
     print("找到论文记录%d条(count:%d)" % (len(results), count))
     # 用于存放论文信息
+    base_url = "https://icml.cc"
     papers = list()
     for item in results:
         authors = item.get("authors", list())
         author_str = ""
         if isinstance(authors, list):
-            author_str = ", ".join([author.get("fullname", "").strip() for author in authors])
-        paper_url = item.get("paper_url", "").strip()
-        virtualsite_url = item.get("virtualsite_url", "").strip()
-        pdf_url = item.get("pdf_url", "").strip()
+            author_str = ", ".join([author.get("fullname", "") for author in authors])
+        paper_url = item.get("paper_url", "")
+        paper_pdf_url = item.get("paper_pdf_url", "")
+        virtualsite_url = item.get("virtualsite_url", "")
+        pdf_url = item.get("pdf_url", "")
         paper_json = {
-            "web_url": paper_url if paper_url else virtualsite_url,
-            "title": item.get("name", "").strip(),
+            "web_url": paper_url or f"{base_url}{virtualsite_url}",
+            "title": item.get("name", ""),
             "author": author_str,
-            "pdf_url": pdf_url,
+            "pdf_url": pdf_url or paper_pdf_url or paper_url.replace("forum", "pdf"),
             "raw": item,
         }
         if debug:
